@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.head-nav {
+    background: #C70851;
+    height: 200px;
+    padding-left: 40px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        '.'
+        'nav-mid'
+        '.';
+}
+
+.head-nav-title {
+    color: #F2F2F2;
+    font-weight: 600;
+    font-size: 80px;
+    grid-area: nav-mid;
+    font-family: 'Roboto';
+}

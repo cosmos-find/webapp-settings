@@ -1,0 +1,281 @@
+.main-page {
+  height: calc(100vh - 200px);
+  display: grid;
+  grid-template-columns: 1fr 50rem 1fr;
+  grid-template-rows: 0.6fr 24rem 1fr;
+  grid-template-areas: 
+    ". . ." ". center ." ". . .";
+}
+
+.card{
+  grid-area: center;
+  width: 50rem;
+  height: 24rem;
+  background: #6B6B6B;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+}
+
+.card-title{
+  text-align: left;
+  padding-left: 0.8rem;
+  height: 42px;
+  left: 600px;
+  top: 296px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.form-control{
+  margin-top: 8rem;
+  width: 100%;
+  padding: 10px;
+  height: 3rem;
+  top: 22px;
+  background-color: #6B6B6B;
+  border: none;
+  outline: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 56px;
+  color: white;
+  box-shadow: none;
+  text-align: center;
+}
+
+.btn-section {
+  grid-area: btn-section;
+  display: flex;
+  justify-content: right;
+  padding-top: 80px;
+}
+
+.btn-Ok {
+  width: 5rem;
+  height: 3rem;
+  background: #C70851;
+  border-radius: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* Detail Page */
+.detail-main {
+  height: calc(100vh - 500px);
+  padding: 80px 80px 80px 80px;
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  grid-template-rows: 3.75rem 40px 1fr;
+  grid-template-areas: 
+    "name-box . right-side"
+    ". . right-side"
+    "select-box . right-side";
+}
+
+.namebox-body{
+  /*box css*/
+  background: #4A4A4A;
+  
+  /*text css*/
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 140px;
+  padding-top: 0.6rem;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+
+.roombox{
+  grid-area: select-box;
+}
+
+.roombox-body{
+  /*box css*/
+  height: 100%;
+  background: #4A4A4A;
+  /*text css*/
+}
+
+.roombox-text{
+  /*box css*/
+
+  /*text css*/
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92px;
+  padding-top: 20px;
+  padding-left: 40px;
+  color: #FFFFFF;
+}
+
+.room-select-button {
+  /*box css*/
+  background-color: #6B6B6B;
+  border-radius: 20px;
+  margin: 40px 40px 40px 40px;
+
+  /*text css*/
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: #FFFFFF;
+}
+
+.room-select-button:hover {
+  background-color: #888888;
+}
+
+.room-select-button-selected {
+  /*box css*/
+  background-color: #C70851;
+  border-radius: 20px;
+  margin: 40px 40px 40px 40px;
+
+  /*text css*/
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: #FFFFFF;
+}
+
+.right-side {
+  grid-area: right-side;
+  background-color: #4A4A4A;
+  padding: 40px;
+  display: grid;
+  grid-template-rows: 1fr 40px 1fr;
+  grid-template-areas: "top" "." "bot";
+}
+
+.right-side-top {
+  grid-area: top;
+}
+
+.right-side-bot {
+  grid-area: bot;
+}
+
+.setting-section {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 8rem 1fr;
+  grid-template-rows: 4rem 1fr 1fr 1fr;
+  grid-template-areas: 
+    "top-title top-title"
+    "text-1 comp-1"
+    "text-2 comp-2"
+    "text-3 comp-3";
+  background-color: #6B6B6B;
+}
+
+.top-title {
+  grid-area: top-title;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 92px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: #FFFFFF;
+}
+
+.text-1 {
+  grid-area: text-1;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92px;
+  padding-left: 40px;
+  color: #FFFFFF;
+}
+
+.text-2 {
+  grid-area: text-2;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: #FFFFFF;
+}
+
+.text-3 {
+  grid-area: text-3;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: #FFFFFF;
+}
+
+.comp-1 {
+  grid-area: comp-1;
+}
+
+.comp-2 {
+  grid-area: comp-2;
+}
+
+.comp-3 {
+  grid-area: comp-3;
+}
+
+.temp-button {
+  display: grid;
+  grid-template-columns: 2rem 5.4rem 1fr;
+  grid-template-areas: "b-1 b-2 b-3";
+}
+
+.temp-button-left {
+  grid-area: b-1;
+}
+
+.temp-button-center {
+  grid-area: b-2;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 92px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  color: #FFFFFF;
+}
+
+.temp-button-right {
+  grid-area: b-3;
+}
